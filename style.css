@@ -1,56 +1,77 @@
 body,
 html {
-	width: 100%;
-	height: 100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 209, 209); 
 }
 
-body {
-	font-family: 'Montserrat', sans-serif;
+.body {
+	font-family: 'Quicksand', sans-serif;
+	
+}
+
+.jumbotron {
+	font-family: 'Raleway', sans-serif;
+	background-color: rgb(71, 71, 71);
+	color: rgba(255, 255, 255, 0.8);
+	text-align: right;
+}
+
+.paragraph {
+	padding: 10px 125px;
 }
 
 hr {
-	max-width: 65px;
-	border-width: 3px;
-	border-color: rgba(255,255,255,0);
+	border-color: white;
+	border-width: 17px;
 }
 
-.faded {
-  color: rgba(255, 255, 255, 0.8); 
+
+.pic {
+	display: flex;
+	justify-content: center;
+	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
 
-header.startup {
-	background-position: center;
-	background-size: cover;
-	background-image: url("1213532.jpg");
-	height: 100%;
+a:link, a:visited {
+	text-decoration: none;
 }
 
-header.startup hr {
-	margin-top: 220px;
-	margin-bottom: 30px;
+a:hover, a:active {
+	text-decoration: none;
 }
-
 
 .btn {
-	font-weight: 700;
-	text-transform: uppercase;
-	border-radius: 50px;
-	font-family: 'Montserrat', sans-serif;
-	background-color: rgb(79, 99, 132);
-	border-color: rgb(79, 99, 132);
-	position: center;
+	padding: 10px 20px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	font-size: 25px;
+	text-transform: lowercase;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	transition: transform 100ms;
 }
 
-.btn-lg {
-	padding: 15px 30px;
+.center-button {
+	display: flex;
+  	justify-content: center;
 }
 
-.btn-secondary {
-	transition: transform 3s;
+.btn:hover {
+	transform: scale(1.02);
 }
 
-.btn-secondary:hover{
-	border-width: 2px;
-	background-color: rgb(80, 151, 155);
-	border-color: rgb(80, 151, 155);
+.last-paragraph {
+	color: rgb(78,78,78);
+	padding: 10px 10px;
+	font-family: 'Amatic SC', cursive;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.page-footer {
+	background-color: rgb(71, 71, 71);
+	margin-top: 10px;
+	font-size: 12px;
 }
